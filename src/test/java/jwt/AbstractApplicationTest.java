@@ -30,7 +30,7 @@ import static org.junit.Assert.assertTrue;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
 @WebIntegrationTest(randomPort = true, value = {"spring.data.mongodb.database=local"})
-public class AbstractApplicationTest {
+public abstract class AbstractApplicationTest {
 
   protected HttpHeaders headers;
 
